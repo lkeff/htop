@@ -2,6 +2,19 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch via NPM",
+      "request": "launch",
+      "runtimeArgs": [
+        "run-script",
+        "debug"
+      ],
+      "runtimeExecutable": "npm",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    },
+    {
       "type": "msedge",
       "request": "launch",
       "name": "Launch Edge against localhost",
@@ -15,8 +28,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "extension-output-ms-vscode.cpptools-#2-C",
-      "program": "extension-output-ms-vscode.cpptools-#2-C/build/Debug/outDebug",
+      "cwd": "c:/Users/ddosn/Documents/GitHub/htop/scripts",
+      "program": "c:/Users/ddosn/Documents/GitHub/htop/scripts/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
